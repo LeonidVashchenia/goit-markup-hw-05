@@ -122,6 +122,10 @@ img {
   margin-right: 50px;
 }
 
+.header-item {
+  display: block;
+}
+
 .header-contact-item {
   margin-right: 50px;
 }
@@ -130,8 +134,22 @@ img {
   color: var(--brand-primary-color);
 }
 
+
 .header-link {
   color: var(--brand-second-color);
+  position: relative;
+}
+
+.header-link.current::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: var(--brand-primary-color);
+  border-radius: 2px;
+  left: 0;
+  bottom: -10px;
+
 }
 
 .contact-icon {
